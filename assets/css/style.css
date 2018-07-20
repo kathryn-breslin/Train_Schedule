@@ -1,0 +1,50 @@
+#trainInput {
+    padding: 40px;
+    background-color: #e0e0eb;
+    float: left;
+}
+
+.panel-title {
+    text-align: center;
+}
+
+#currentTime, #name, #destination,
+#frequency, #arrival {
+    background-color: #29293d;
+    color: white;
+}
+
+.table {
+    border: solid black 1px;
+}
+
+.table tr:hover {
+    background-color: #f0f0f5;
+}
+
+#b {
+    border: solid black 1px;
+    padding: 10px;
+}
+
+#add-train {
+    width: 100px;
+    height: 50px;
+    background-color: #3d3d5c;
+    color: white;
+}
+
+#add-train:hover {
+    background-color: #f0f0f5;
+    color: black;
+}
+
+#name-input:hover, #destination-input:hover, 
+#frequency-input:hover, #minutesAway-input:hover {
+background-color: #f0f0f5;
+}
+
+#map {
+    float: left;
+    width: 100%;
+}

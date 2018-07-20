@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Train Schedule</title>
+</head>
+<body>
+    <div class="header jumbotron">
+        <h1 class="text-center">Trains</h1>
+    </div>
+    <div class="col-12" id"table">
+    <table class="table">
+        <thead>
+            <tr></tr>
+                <th scope="col" id="currentTime">Current Time</th>
+                <th scope="col" id="name">Name of Train</th>
+                <th scope="col" id="destination">Destination</th>
+                <th scope="col" id="frequency">Frequency (min)</th>
+                <th scope="col" id="arrival">Arrival Time (min)</th>
+                <!--<th scope="col">Next Arrival Time</th>-->
+            </tr>
+        </thead>
+        <tbody id = "dataStore">
+            
+        </tbody>
+    </table>
+    </div>
+    <div class="row" id="below">
+    <div class="col-6" id="trainInput">
+        <div class="panel panel-default">
+            <div class="col-12" id="panel-heading">
+                <h3 class="panel-title">Add Train</h3>
+            </div>
+            <div class="panel-body">
+                <!-- Sign-up Form (note the various input "types")-->
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name-input">Name of Train:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination-input">Destination:</label>
+                        <input class="form-control" id="destination-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency-input">Frequency (min):</label>
+                        <input class="form-control" id="frequency-input" type="number">
+                    </div>
+                    <div class="form-group">
+                            <label for="minutesAway-input">Minutes Away:</label>
+                            <input class="form-control" id="minutesAway-input" type="number">
+                    </div>
+                    
+                    <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14373840.404183408!2d-2.7743242643918054!3d44.60673077113906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1sen!2sus!4v1532047157752" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="assets/javascript/java.js"></script>
+</body>
+</html>
