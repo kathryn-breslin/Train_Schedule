@@ -10,5 +10,7 @@ This app retrieves and manipulates this information with Moment.js and provides 
 Add trains to the queue with the form provided. The user can add: 
 1. Train Name
 2. Destination
-3. First Train Time (in miliary time)
+3. First Train Time (in military time)
 4. Frequency (in minutes)
+
+![Psychic Game](assets/css/images/trainScheduler.png)
